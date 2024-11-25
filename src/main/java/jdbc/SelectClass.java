@@ -1,13 +1,16 @@
 package jdbc;
 
+import util.ConnectionClass;
 import util.ScannerUtil;
 
-import java.sql.*;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
-public class ConnectionClass {
+
+public class SelectClass {
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
-        Class.forName("com.mysql.cj.jdbc.Driver"); // load a driver
-        Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3307/college","root","logic");
+
         System.out.println("Enter name");
         String name = ScannerUtil.takeInput().nextLine();
         System.out.println("Enter id to be searched");
@@ -16,7 +19,7 @@ public class ConnectionClass {
 //            System.out.println("Connected");
 
         String selectQuery="select * from faculty where fac_name=? and  id = ?";
-        PreparedStatement prepareStatement = connection.prepareStatement(selectQuery);
+        PreparedStatement prepareStatement = ConnectionClass.getConnection().prepareStatement(selectQuery);
         prepareStatement.setString(1,name);
         prepareStatement.setInt(2,id);
         ResultSet resultSet = prepareStatement.executeQuery();
