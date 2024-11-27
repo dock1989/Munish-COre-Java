@@ -1,0 +1,11 @@
+Thread can be made by 2 approaches:
+
+1. By implementing Runnable interface
+
+2. By extending Thread class.
+
+both of them having the same run() method
+
+Lifecycle of Threads:
+
+1. start ----> run ----> pause, wait, notify, -----> dead
