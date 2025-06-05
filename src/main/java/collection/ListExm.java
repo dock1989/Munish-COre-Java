@@ -25,6 +25,16 @@ public class ListExm {
         list.stream().collect(Collectors.groupingBy(Function.identity(),Collectors.counting()))
                 .forEach((x,y) -> System.out.println(x + "    " + y));
 
+
+//    List<Integer> list = new ArrayList<>();
+//    list.add("2");
+//        list.add('2');
+//        list.add(2);
+//        list.add(2.0);
+//        list.add(2f);
+//        list.add(true);
+//        System.out.println(list);
+
     }
 }
 /**
