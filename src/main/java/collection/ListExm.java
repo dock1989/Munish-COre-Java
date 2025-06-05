@@ -1,7 +1,10 @@
 package collection;
 
+import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
 public class ListExm {
     public static void main(String[] args) {
@@ -18,6 +21,9 @@ public class ListExm {
 
         int result = list.stream().mapToInt(x -> x).sum();
         System.out.println("The result is " + result);
+
+        list.stream().collect(Collectors.groupingBy(Function.identity(),Collectors.counting()))
+                .forEach((x,y) -> System.out.println(x + "    " + y));
 
     }
 }
