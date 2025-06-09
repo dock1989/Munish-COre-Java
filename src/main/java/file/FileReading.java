@@ -14,9 +14,10 @@ public class FileReading {
             System.out.println("File already exists");
 
         BufferedReader bufferedReader = new BufferedReader(new FileReader(file));
+        String data;
 
-        while(bufferedReader.read() > 0)
-        System.out.println(bufferedReader.readLine());
+        while((data =bufferedReader.readLine()) != null)
+        System.out.println(data);
 
     }
 }
