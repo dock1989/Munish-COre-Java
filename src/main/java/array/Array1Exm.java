@@ -8,6 +8,7 @@ public class Array1Exm {
         int b[][]=new int[3][3]; // 1[] ---> row   2[]----> column
         int sum =0;
         int d=0;
+        int f=0;
 //        for (int i=0;i<=10;i++){
 //            System.out.println("Enter any number");
 //            a[i] = ScannerUtil.takeInput().nextInt();
