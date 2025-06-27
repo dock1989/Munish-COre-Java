@@ -3,9 +3,9 @@ package thread;
 public class ThreadExm {
     public static void main(String[] args) throws InterruptedException {
 
-        ThreadOne threadOne = new ThreadOne();
-        ThreadTwo threadTwo = new ThreadTwo();
-        threadOne.testLambdaWithThread();
+        ThreadFirst threadOne = new ThreadFirst();
+        ThreadTwoOne threadTwo = new ThreadTwoOne();
+//        threadOne.testLambdaWithThread();
 
     }
 }

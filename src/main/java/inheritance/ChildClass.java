@@ -8,7 +8,7 @@ import java.util.List;
  * and <b>multiple interface names</b> can be given after implements keyword seperated by
  * comma
  */
-public class ChildClass extends AbstractExm implements InterfaceExm{
+public class ChildClass extends AbstractExm implements InterfaceExm,InterfaceExm2{
     @Override
     public void aa() {
 
@@ -39,5 +39,15 @@ public class ChildClass extends AbstractExm implements InterfaceExm{
     @Override
     public void ee() {
         System.out.println("Interface method from child class");
+    }
+
+    @Override
+    public void ff() {
+
+    }
+
+    @Override
+    public void gg() {
+
     }
 }
