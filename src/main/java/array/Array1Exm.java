@@ -15,7 +15,7 @@ public class Array1Exm {
 //            sum+=a[i];  // sum = sum + a[i];
 //        }
 //        System.out.println(sum);
-
+        int f[]=new int[11];   //---1 d
 
         for(int i=0;i<3;i++){
             for(int j=0;j<3;j++){
