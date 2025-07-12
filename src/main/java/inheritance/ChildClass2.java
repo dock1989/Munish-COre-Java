@@ -12,6 +12,11 @@ public class ChildClass2 extends AbstractExm{
         System.out.println("This is from child2 class");
     }
 
+    @Override
+    public void dd() {
+        
+    }
+
     public static void main(String[] args) {
         ChildClass2 childClass2 = new ChildClass2();
         childClass2.aa();

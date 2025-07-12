@@ -12,6 +12,8 @@ public abstract class AbstractExm {
 
     public abstract void cc();
 
+    public abstract void dd ();
+
 
 
 
