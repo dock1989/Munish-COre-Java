@@ -1,5 +1,6 @@
 package collection;
 
+import java.util.ArrayDeque;
 import java.util.PriorityQueue;
 import java.util.Queue;
 import java.util.Stack;
@@ -7,12 +8,13 @@ import java.util.Stack;
 public class QueueExm {
     public static void main(String[] args) {
         Queue<String> fruit = new PriorityQueue<>();
-        fruit.add("Bananna");
+
         fruit.add("Apple");
 
         fruit.add("Mango");
         fruit.add("Kiwi");
         fruit.add("Orange");
+        fruit.add("Bananna");
 
 //        String topFruit = fruit.peek();
 //        System.out.println("Top Most fruit is " + topFruit);

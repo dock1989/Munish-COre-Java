@@ -6,10 +6,11 @@ public class StackExm {
     public static void main(String[] args) {
         Stack<String> fruit = new Stack<>();
         fruit.push("Apple");
-        fruit.push("Bananna");
+
         fruit.push("Mango");
         fruit.push("Kiwi");
         fruit.push("Orange");
+        fruit.push("Bananna");
 
 //        String topFruit = fruit.peek();
 //        System.out.println("Top Most fruit is " + topFruit);
