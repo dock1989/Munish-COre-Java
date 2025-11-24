@@ -5,8 +5,10 @@ public class DoWhileExm {
         int i=20;
         do{
             System.out.println("Print data");
+            System.out.println(i);
+            i--;
         }
-        while (i<10);
+        while (i>10);
         System.out.println("Program terminates");
     }
 }

@@ -11,7 +11,7 @@ public class Array2DExm {
                    arr[i][j] *=-1;
             }
             Arrays.sort(arr[i]);
-            System.out.print(arr[i][0]);
+            System.out.print(arr[i][1]);
         }
     }
 }

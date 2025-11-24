@@ -16,13 +16,13 @@ public class ArrayDeclration {
         int b[] = new int[]{1,2,3,4,5,6,7,8};
         System.out.println(b.length);
 
-//        for(int i=0;i<10;i++){
-//            System.out.println("Enter a number");
-//            a[i] = scanner.nextInt();
-//            sum += a[i];
-//        }
+        for(int i=0;i<10;i++){
+            System.out.println("Enter a number");
+            a[i] = scanner.nextInt();
+            sum += a[i];
+        }
 
-//        System.out.println(sum);
+        System.out.println(sum);
 
         for(int i=0;i<b.length;i++){
             if(b[i] % 2 == 0)
